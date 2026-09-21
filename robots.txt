@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /journeys/detail.html
+Disallow: /destinations/detail.html
+Disallow: /experiences/detail.html
+Disallow: /stays/detail.html
+
+Sitemap: https://katembo-site.vercel.app/sitemap.xml

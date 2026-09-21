@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Katembo Safari</title>
+  <meta name="description" content="Speak directly with a Katembo Safari planner — by email, phone or a short note from this page. Replies within two working days.">
+  <link rel="canonical" href="https://katembo-site.vercel.app/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Katembo Safari">
+  <meta property="og:title" content="Contact — Katembo Safari">
+  <meta property="og:description" content="Speak directly with a Katembo Safari planner.">
+  <meta property="og:image" content="https://katembo-site.vercel.app/images/hero-safari.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#241a12">
+  <link rel="icon" href="/katemo safaris.jpeg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Plus+Jakarta+Sans:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="siteHeader">
+    <div class="container header__inner">
+      <a class="brand" href="/" aria-label="Katembo Safari — home">
+        <img class="brand__logo" src="/katemo safaris.jpeg" alt="">
+        <span class="brand__name">Katembo Safari</span>
+      </a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primaryNav" class="nav" aria-label="Primary">
+        <a class="nav__link" href="/">Home</a>
+        <a class="nav__link" href="/journeys/">Journeys</a>
+        <a class="nav__link" href="/destinations/">Destinations</a>
+        <a class="nav__link" href="/experiences/">Experiences</a>
+        <a class="nav__link" href="/stays/">Places to Stay</a>
+        <a class="nav__link" href="/about.html">About</a>
+        <a class="nav__link" href="/journal.html">Journal</a>
+        <a class="nav__cta btn btn--primary" href="/plan.html">Plan Your Safari</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="/">Home</a><span class="breadcrumb__sep" aria-hidden="true">/</span><span aria-current="page">Contact</span></p>
+        <p class="eyebrow eyebrow--on-dark">Contact</p>
+        <h1 class="page-hero__title">Speak with a Planner</h1>
+        <p class="page-hero__lede">A human reads every message. Expect a considered reply within two working days — usually sooner.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="intro" style="grid-template-columns:1fr auto;align-items:start">
+          <div class="reveal">
+            <p class="eyebrow">Write to us</p>
+            <h2>Send a note</h2>
+            <form id="contactForm" class="form-contact" novalidate>
+              <div class="field">
+                <label class="field__label" for="contactName">Full name <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="contactName" name="name" type="text" autocomplete="name" placeholder="How should we address you?" aria-describedby="contactNameErr" required>
+                <p class="field__error" id="contactNameErr"></p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="contactEmail">Email address <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="contactEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" aria-describedby="contactEmailErr" required>
+                <p class="field__error" id="contactEmailErr"></p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="contactMessage">Your message <span class="req" aria-hidden="true">*</span></label>
+                <textarea class="textarea" id="contactMessage" name="message" placeholder="Tell us about your dream journey — or any question at all." aria-describedby="contactMessageErr" required></textarea>
+                <p class="field__error" id="contactMessageErr"></p>
+              </div>
+              <button class="btn btn--primary" type="submit">Send Message</button>
+              <p class="form-note form-note--info" id="contactNote" role="status" hidden></p>
+            </form>
+          </div>
+          <aside class="reveal" data-delay="1" style="min-width:19rem">
+            <div class="fact-sheet">
+              <h2 class="fact-sheet__title">The quick routes</h2>
+              <div class="fact-list">
+                <div class="fact-row">
+                  <span class="fact-row__label">Email</span>
+                  <span class="fact-row__value"><a href="mailto:journeys@katembosafari.com" style="color:var(--gold-ink)">journeys@katembosafari.com</a></span>
+                </div>
+                <div class="fact-row">
+                  <span class="fact-row__label">Phone / WhatsApp</span>
+                  <span class="fact-row__value"><a href="tel:+255700000000" style="color:var(--gold-ink)">+255 700 000 000</a></span>
+                </div>
+                <div class="fact-row">
+                  <span class="fact-row__label">Offices</span>
+                  <span class="fact-row__value">Arusha, Tanzania<br>Nairobi, Kenya</span>
+                </div>
+                <div class="fact-row">
+                  <span class="fact-row__label">Response time</span>
+                  <span class="fact-row__value">Within two working days; enquiries via the wizard are prioritised.</span>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="brand" href="/" aria-label="Katembo Safari — home">
+            <img class="brand__logo" src="/katemo safaris.jpeg" alt="">
+            <span class="brand__name">Katembo Safari</span>
+          </a>
+          <p class="footer__about">Bespoke private safaris for discerning travellers — from the plains of the Serengeti to the sands of Zanzibar.</p>
+          <ul class="footer__contact">
+            <li><a href="tel:+255700000000">+255 700 000 000</a></li>
+            <li><a href="mailto:journeys@katembosafari.com">journeys@katembosafari.com</a></li>
+            <li>Arusha, Tanzania · Nairobi, Kenya</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer__head">Destinations</h2>
+          <ul class="footer__list">
+            <li><a href="/destinations/serengeti">Serengeti</a></li>
+            <li><a href="/destinations/ngorongoro">Ngorongoro</a></li>
+            <li><a href="/destinations/tarangire">Tarangire</a></li>
+            <li><a href="/destinations/ruaha">Ruaha</a></li>
+            <li><a href="/destinations/zanzibar">Zanzibar</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer__head">Experiences</h2>
+          <ul class="footer__list">
+            <li><a href="/experiences/great-migration">Great Migration</a></li>
+            <li><a href="/experiences/hot-air-balloon-safari">Balloon Safari</a></li>
+            <li><a href="/experiences/walking-safari">Walking Safari</a></li>
+            <li><a href="/experiences/helicopter-safari">Helicopter Safari</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer__head">Field Notes</h2>
+          <p>Seasonal notes from the bush — once a month, no noise. Join us.</p>
+          <form class="footer__form" action="#">
+            <label class="sr-only" for="newsletterEmail">Email address</label>
+            <input type="email" id="newsletterEmail" name="email" placeholder="Your email address" autocomplete="email" required>
+            <button type="submit">Join</button>
+            <p class="form-note" id="newsletterNote" role="status" hidden></p>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="year"></span> Katembo Safari Ltd. All rights reserved.</p>
+        <div class="footer__socials" id="footerSocials"></div>
+        <nav class="footer__legal" aria-label="Legal">
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+          <a href="/responsible-tourism.html">Responsible Tourism</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="/data.js"></script>
+  <script src="/script.js"></script>
+</body>
+</html>

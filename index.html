@@ -1,432 +1,380 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Katembo Safari — Timeless, untethered luxury. Bespoke African safaris, private wilderness expeditions, and exclusive high-end lodge experiences in the heart of the wild.">
-  <meta name="theme-color" content="#2A1810">
-  <meta property="og:title" content="Katembo Safari — Escape the Ordinary Pull">
-  <meta property="og:description" content="Tailored private safaris and untethered luxury in the heart of the wild.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Katembo Safari — Timeless, Untethered Luxury in East Africa</title>
+  <meta name="description" content="Bespoke private safaris across Tanzania, Kenya and Rwanda — from the plains of the Serengeti to the sands of Zanzibar. Composed around you by one devoted planner.">
+  <link rel="canonical" href="https://katembo-site.vercel.app/">
   <meta property="og:type" content="website">
-
-  <title>Katembo Safari — Timeless, Untethered Luxury</title>
-
-  <!-- Preload Critical Assets -->
-  <link rel="preload" href="images/hero-safari.jpg" as="image">
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" as="style">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/jpeg" href="katemo safaris.jpeg">
+  <meta property="og:site_name" content="Katembo Safari">
+  <meta property="og:title" content="Katembo Safari — Timeless, Untethered Luxury">
+  <meta property="og:description" content="Bespoke private safaris across Tanzania, Kenya and Rwanda.">
+  <meta property="og:image" content="https://katembo-site.vercel.app/images/hero-safari.jpg">
+  <meta property="og:url" content="https://katembo-site.vercel.app/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#241a12">
+  <link rel="icon" href="/katemo safaris.jpeg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Plus+Jakarta+Sans:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Katembo Safari",
+    "alternateName": "Katembo Safari Ltd.",
+    "slogan": "Timeless, untethered luxury.",
+    "url": "https://katembo-site.vercel.app/",
+    "email": "journeys@katembosafari.com",
+    "telephone": "+255 700 000 000",
+    "logo": "https://katembo-site.vercel.app/katemo%20safaris.jpeg",
+    "image": "https://katembo-site.vercel.app/images/hero-safari.jpg",
+    "areaServed": ["Tanzania", "Kenya", "Rwanda", "Zanzibar"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Arusha",
+      "addressCountry": "TZ"
+    },
+    "sameAs": []
+  }
+  </script>
 </head>
 <body>
-
-  <!-- ============================================================
-       1. NAVIGATION — Sticky & Minimalist
-       ============================================================ -->
-  <header class="navbar" id="navbar" role="banner">
-    <div class="navbar__inner">
-      <!-- Logo -->
-      <a href="#" class="navbar__logo" aria-label="Katembo Safari Home">
-        <img src="katemo safaris.jpeg" alt="Katembo Safari Logo" width="60" height="60">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header header--overlay" id="siteHeader">
+    <div class="container header__inner">
+      <a class="brand" href="/" aria-label="Katembo Safari — home">
+        <img class="brand__logo" src="/katemo safaris.jpeg" alt="">
+        <span class="brand__name">Katembo Safari</span>
       </a>
-
-      <!-- Navigation Links -->
-      <nav class="navbar__links" id="navLinks" role="navigation" aria-label="Main Navigation">
-        <a href="#experiences">Destinations</a>
-        <a href="#difference">Private Journeys</a>
-        <a href="#lodges">Luxury Lodges</a>
-        <a href="#footer">Field Notes</a>
-        <a href="#difference">About</a>
-      </nav>
-
-      <!-- CTA -->
-      <div class="navbar__cta">
-        <a href="#contact" class="btn btn-primary">Plan a Private Journey</a>
-      </div>
-
-      <!-- Mobile Toggle -->
-      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
       </button>
+      <nav id="primaryNav" class="nav" aria-label="Primary">
+        <a class="nav__link" href="/">Home</a>
+        <a class="nav__link" href="/journeys/">Journeys</a>
+        <a class="nav__link" href="/destinations/">Destinations</a>
+        <a class="nav__link" href="/experiences/">Experiences</a>
+        <a class="nav__link" href="/stays/">Places to Stay</a>
+        <a class="nav__link" href="/about.html">About</a>
+        <a class="nav__link" href="/journal.html">Journal</a>
+        <a class="nav__cta btn btn--primary" href="/plan.html">Plan Your Safari</a>
+      </nav>
     </div>
   </header>
-
-  <!-- ============================================================
-       2. HERO SECTION — Immersive & Cinematic
-       ============================================================ -->
-  <section class="hero" id="hero" aria-label="Hero Banner">
-    <div class="hero__bg">
-      <img src="images/hero-safari.jpg" alt="Herd of elephants walking across the Serengeti at golden hour sunset" width="1920" height="1080" fetchpriority="high">
-    </div>
-    <div class="hero__overlay"></div>
-
-    <div class="hero__content">
-      <span class="section-label">Katembo Safari</span>
-      <h1 class="hero__title">Escape the<br>Ordinary <em>Pull.</em></h1>
-      <p class="hero__subtitle">Tailored private safaris and untethered luxury in the heart of the wild. Where every horizon is yours alone.</p>
-      <div class="hero__actions">
-        <a href="#experiences" class="btn btn-primary">
-          Explore Journeys
-          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <a href="#" class="btn btn-outline">
-          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-          Watch Film
-        </a>
+  <main id="main">
+    <section class="hero">
+      <div class="hero__media">
+        <img src="/images/hero-safari.jpg" alt="Golden savanna at dusk, acacia trees silhouetted against the last light, animals grazing far off — the Serengeti in its evening register." fetchpriority="high">
       </div>
-    </div>
-
-    <div class="hero__scroll-indicator" aria-hidden="true">
-      <span>Scroll</span>
-      <div class="hero__scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       3. BESPOKE EXPEDITIONS — Floating Card Grid
-       ============================================================ -->
-  <section class="experiences" id="experiences" aria-label="Bespoke Expeditions">
-    <div class="experiences__header">
-      <span class="section-label reveal">Curated Experiences</span>
-      <h2 class="reveal">Bespoke Expeditions</h2>
-      <p class="section-subtitle reveal">Handcrafted journeys into Africa's most extraordinary landscapes — each one as unique as the traveller who embarks upon it.</p>
-    </div>
-
-    <div class="experiences__grid">
-      <!-- Card 1: Serengeti Migration -->
-      <article class="experience-card reveal" id="exp-migration">
-        <div class="experience-card__image">
-          <img src="images/exp-migration.jpg" alt="Wildebeest crossing the Mara River during the Great Migration" width="600" height="800" loading="lazy">
-          <span class="experience-card__tag">Signature Journey</span>
-        </div>
-        <div class="experience-card__body">
-          <h3 class="experience-card__title">The Great Migration</h3>
-          <p class="experience-card__desc">Witness nature's grandest spectacle across the Serengeti-Mara ecosystem. Private fly-camps positioned at the heart of the crossing.</p>
-          <a href="#" class="experience-card__link" aria-label="Discover the Great Migration journey">
-            Discover Journey
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-      </article>
-
-      <!-- Card 2: Ngorongoro Crater -->
-      <article class="experience-card reveal" id="exp-crater">
-        <div class="experience-card__image">
-          <img src="images/exp-crater.jpg" alt="Aerial view of Ngorongoro Crater with lush green floor and misty rim" width="600" height="800" loading="lazy">
-          <span class="experience-card__tag">Private Access</span>
-        </div>
-        <div class="experience-card__body">
-          <h3 class="experience-card__title">Ngorongoro Crater</h3>
-          <p class="experience-card__desc">Descend into the world's largest intact volcanic caldera. Exclusive private fly-camping on the crater rim under infinite African skies.</p>
-          <a href="#" class="experience-card__link" aria-label="Discover the Ngorongoro Crater journey">
-            Discover Journey
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-      </article>
-
-      <!-- Card 3: Helicopter Safari -->
-      <article class="experience-card reveal" id="exp-helicopter">
-        <div class="experience-card__image">
-          <img src="images/exp-helicopter.jpg" alt="Luxury helicopter flying over African savanna with elephants and giraffes below" width="600" height="800" loading="lazy">
-          <span class="experience-card__tag">Ultra-Exclusive</span>
-        </div>
-        <div class="experience-card__body">
-          <h3 class="experience-card__title">Helicopter Safaris</h3>
-          <p class="experience-card__desc">Rise above the ordinary. Access remote wilderness from the air, touching down at hidden camps unreachable by road.</p>
-          <a href="#" class="experience-card__link" aria-label="Discover helicopter safari journeys">
-            Discover Journey
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       4. THE KATEMBO DIFFERENCE — Storytelling & Scarcity
-       ============================================================ -->
-  <section class="difference" id="difference" aria-label="The Katembo Difference">
-    <div class="difference__inner">
-      <div class="difference__content">
-        <span class="section-label reveal-left">Why Katembo</span>
-        <h2 class="difference__title reveal-left">The Katembo<br>Difference</h2>
-        <p class="difference__subtitle reveal-left">We don't offer trips. We orchestrate disappearances — moments where the world falls away and only the wild remains.</p>
-
-        <div class="difference__pillars">
-          <div class="pillar reveal-left">
-            <h4 class="pillar__title">Rare Access</h4>
-            <p class="pillar__desc">Private concessions and exclusive traversing rights to Africa's most pristine wilderness.</p>
-          </div>
-          <div class="pillar reveal-left">
-            <h4 class="pillar__title">Effortless Orchestration</h4>
-            <p class="pillar__desc">Every detail anticipated. From chartered flights to sundowner coordinates — invisible perfection.</p>
-          </div>
-          <div class="pillar reveal-left">
-            <h4 class="pillar__title">Living Heritage</h4>
-            <p class="pillar__desc">Deep-rooted partnerships with local communities and a legacy of conservation stewardship.</p>
-          </div>
-          <div class="pillar reveal-left">
-            <h4 class="pillar__title">Unmatched Solitude</h4>
-            <p class="pillar__desc">No crowds. No compromises. Only the vast, unscripted drama of the African bush.</p>
+      <div class="hero__scrim"></div>
+      <div class="container">
+        <div class="hero__content">
+          <p class="eyebrow eyebrow--on-dark hero__eyebrow">Private East African Journeys</p>
+          <h1 class="hero__title">Timeless, <em>untethered</em> luxury.</h1>
+          <p class="hero__sub">Bespoke safaris composed around you — from the endless plains of the Serengeti to the quiet of a private island. One devoted planner to each traveller, and no shortcuts.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="/plan.html">Plan Your Safari</a>
+            <a class="btn btn--outline" href="/journeys/">Explore Journeys</a>
           </div>
         </div>
       </div>
+      <p class="hero__note">Katembo · East Africa</p>
+    </section>
 
-      <div class="difference__visual reveal-right">
-        <img src="images/lodge-tented.jpg" alt="Luxury safari tented camp overlooking the African savanna at sunset" width="800" height="560" loading="lazy">
-        <div class="difference__stat">
-          <div>
-            <span class="stat__number">15+</span>
-            <span class="stat__label">Years of Excellence</span>
+    <section class="section">
+      <div class="container">
+        <div class="intro reveal">
+          <div class="intro__copy">
+            <p class="eyebrow">Katembo Safari</p>
+            <h2>Travel, composed</h2>
+            <p>Katembo is a small safari house with a single belief: the finest journey in Africa is not the longest, the fastest or the most crowded of accolades — it is the one arranged entirely around you. Your mornings, your pace, your appetite for wonder.</p>
+            <p>One planner sees the whole of your trip from first conversation to final toast. Private vehicles, small camps, guides who read the land like a tide table — and the freedom that comes when everything is handled.</p>
+            <div class="hero__actions" style="margin-top:2rem">
+              <a class="btn btn--outline-dark" href="/about.html">About Katembo</a>
+              <a class="btn btn--ghost" href="/plan.html">How we plan <span class="btn__arrow"><svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></a>
+            </div>
           </div>
-          <div>
-            <span class="stat__number">98%</span>
-            <span class="stat__label">Guest Return Rate</span>
+          <figure class="intro__figure reveal" data-delay="1">
+            <img src="/images/exp-crater.jpg" alt="A private 4x4 pausing beside the rim of the Ngorongoro Crater, the caldera floor spread out below." loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--ivory-2">
+      <div class="container">
+        <div class="sectionHead sectionHead--center reveal">
+          <p class="eyebrow">Private Journeys</p>
+          <h2>Signature journeys</h2>
+          <p class="lede lede--center">Eight frameworks for East Africa — each one refined over conversations until it reads like your own.</p>
+        </div>
+        <div class="grid grid--3" data-listing="journeys" data-limit="3"></div>
+        <div style="text-align:center;margin-top:var(--space-lg)" class="reveal">
+          <a class="btn btn--outline-dark" href="/journeys/">All Journeys</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--ink">
+      <div class="container">
+        <div class="sectionHead sectionHead--center reveal">
+          <p class="eyebrow eyebrow--on-dark">Why Katembo</p>
+          <h2 style="color:var(--on-dark)">Luxury is in the details.</h2>
+        </div>
+        <div class="pillars">
+          <div class="pillar reveal">
+            <span class="pillar__index">01</span>
+            <h3>Private by default</h3>
+            <p>Your own vehicle, your own guide, your own table. Sharing is an option — never the frame.</p>
           </div>
-          <div>
-            <span class="stat__number">40+</span>
-            <span class="stat__label">Private Concessions</span>
+          <div class="pillar reveal" data-delay="1">
+            <span class="pillar__index">02</span>
+            <h3>An expert&rsquo;s eye</h3>
+            <p>A dedicated planner who has stood in every camp they recommend, and returns to check on them.</p>
+          </div>
+          <div class="pillar reveal" data-delay="2">
+            <span class="pillar__index">03</span>
+            <h3>The right season</h3>
+            <p>Journeys timed to the herds, the light and the blooms — a calendar read for you alone.</p>
+          </div>
+          <div class="pillar reveal" data-delay="3">
+            <span class="pillar__index">04</span>
+            <h3>Quiet conservation</h3>
+            <p>Protected land, community dividends and operators chosen for their care of both.</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============================================================
-       5. LUXURY LODGES — Interactive Tabs
-       ============================================================ -->
-  <section class="lodges" id="lodges" aria-label="Luxury Accommodations">
-    <div class="lodges__header">
-      <span class="section-label reveal">Accommodations</span>
-      <h2 class="reveal">Luxury Lodges &amp; Camps</h2>
-      <p class="section-subtitle reveal">Each sanctuary is a masterwork of design and wilderness immersion — where untamed nature meets uncompromising comfort.</p>
-    </div>
-
-    <!-- Tabs -->
-    <div class="lodges__tabs" role="tablist" aria-label="Lodge categories">
-      <button class="lodge-tab active" role="tab" id="tab-tented" aria-controls="panel-tented" aria-selected="true" data-tab="tented">Luxury Tented Camps</button>
-      <button class="lodge-tab" role="tab" id="tab-villa" aria-controls="panel-villa" aria-selected="false" data-tab="villa">Private Safari Villas</button>
-      <button class="lodge-tab" role="tab" id="tab-suite" aria-controls="panel-suite" aria-selected="false" data-tab="suite">Wilderness Suites</button>
-    </div>
-
-    <!-- Panel 1: Tented Camp -->
-    <div class="lodge-panel active" id="panel-tented" role="tabpanel" aria-labelledby="tab-tented" data-panel="tented">
-      <div class="lodge-panel__image reveal-scale">
-        <img src="images/lodge-tented.jpg" alt="Luxury tented camp with lantern-lit pathway and private plunge pool at sunset" width="800" height="480" loading="lazy">
-      </div>
-      <div class="lodge-panel__content">
-        <h3 class="lodge-panel__name reveal">Serengeti Under Canvas</h3>
-        <div class="lodge-panel__location reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Central Serengeti, Tanzania
+    <section class="section">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <p class="eyebrow">Destinations</p>
+          <h2>The wild places</h2>
+          <p class="lede">From the crater floor to the island coast — ten stages on which a journey can be set.</p>
         </div>
-        <p class="lodge-panel__desc reveal">An intimate collection of eight tented suites, each positioned for maximum wildlife immersion. Wake to the sound of the bush, with uninterrupted views stretching to the horizon.</p>
-        <div class="lodge-panel__features reveal">
-          <div class="feature-item">
-            <div class="feature-item__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h6a2 2 0 0 1 2 2v6"/><path d="M2 18h8"/><path d="M14 6h6a2 2 0 0 1 2 2v6"/><path d="M14 12h8"/></svg>
+        <div class="grid grid--4" data-listing="destinations" data-limit="4"></div>
+        <div style="text-align:center;margin-top:var(--space-lg)" class="reveal">
+          <a class="btn btn--outline-dark" href="/destinations/">All Destinations</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="intro reveal">
+          <figure class="intro__figure">
+            <img src="/images/exp-helicopter.jpg" alt="A helicopter descending toward a remote fly-camp on the open plains — access to corners a vehicle can never reach." loading="lazy">
+          </figure>
+          <div class="intro__copy">
+            <p class="eyebrow">Experiences</p>
+            <h2>Moments, composed</h2>
+            <p>The individual hours that make a journey unforgettable — a balloon lifting before light, a walk with trackers through the smaller life of the bush, a helicopter crossing the crater in minutes.</p>
+            <p>None of it is a menu to fill a schedule. Each experience is woven in where the land and the light — and your appetite — ask for it.</p>
+            <div class="hero__actions" style="margin-top:2rem">
+              <a class="btn btn--outline-dark" href="/experiences/">All Experiences</a>
             </div>
-            Private Plunge Pool
-          </div>
-          <div class="feature-item">
-            <div class="feature-item__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            </div>
-            Stargazing Deck
-          </div>
-          <div class="feature-item">
-            <div class="feature-item__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            </div>
-            Dedicated Butler
-          </div>
-          <div class="feature-item">
-            <div class="feature-item__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3z"/><path d="M14 3h7v7h-7z"/><path d="M3 14h7v7H3z"/><path d="M14 14h7v7h-7z"/></svg>
-            </div>
-            Farm-to-Table Dining
           </div>
         </div>
-        <a href="#" class="btn btn-outline-dark">
-          Reserve Your Suite
-          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
       </div>
-    </div>
+    </section>
 
-    <!-- Panel 2: Private Villa -->
-    <div class="lodge-panel" id="panel-villa" role="tabpanel" aria-labelledby="tab-villa" data-panel="villa">
-      <div class="lodge-panel__image reveal-scale">
-        <img src="images/lodge-villa.jpg" alt="Private safari villa with infinity pool overlooking the savanna" width="800" height="480" loading="lazy">
-      </div>
-      <div class="lodge-panel__content">
-        <h3 class="lodge-panel__name">Mara Heights Villa</h3>
-        <div class="lodge-panel__location">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Masai Mara Conservancy, Kenya
+    <section class="section section--ivory-2">
+      <div class="container">
+        <div class="sectionHead sectionHead--center reveal">
+          <p class="eyebrow">Places to Stay</p>
+          <h2>Where the night falls</h2>
+          <p class="lede lede--center">Canvas, stone and glass — a short, personally vetted list of stays chosen for their position and their people.</p>
         </div>
-        <p class="lodge-panel__desc">An exclusive-use private villa set on a hillside with sweeping 270-degree views of the Mara plains. Complete with private chef, vehicle, and guide dedicated solely to your party.</p>
-        <div class="lodge-panel__features">
-          <div class="feature-item">
-            <div class="feature-item__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h6a2 2 0 0 1 2 2v6"/><path d="M2 18h8"/><path d="M14 6h6a2 2 0 0 1 2 2v6"/><path d="M14 12h8"/></svg>
-            </div>
-            Heated Infinity Pool
-          </div>
-          <div class="feature-item">
-            <div class="feature-item__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            </div>
-            Private Wine Cellar
-          </div>
-          <div class="feature-item">
-            <div class="feature-item__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            </div>
-            24-Hour Concierge
-          </div>
-          <div class="feature-item">
-            <div class="feature-item__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3z"/><path d="M14 3h7v7h-7z"/><path d="M3 14h7v7H3z"/><path d="M14 14h7v7h-7z"/></svg>
-            </div>
-            In-Villa Spa
-          </div>
+        <div class="grid grid--3" data-listing="stays" data-limit="3"></div>
+        <div style="text-align:center;margin-top:var(--space-lg)" class="reveal">
+          <a class="btn btn--outline-dark" href="/stays/">Places to Stay</a>
         </div>
-        <a href="#" class="btn btn-outline-dark">
-          Reserve Your Villa
-          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
       </div>
-    </div>
+    </section>
 
-    <!-- Panel 3: Wilderness Suite -->
-    <div class="lodge-panel" id="panel-suite" role="tabpanel" aria-labelledby="tab-suite" data-panel="suite">
-      <div class="lodge-panel__image reveal-scale">
-        <img src="images/lodge-villa.jpg" alt="Luxury wilderness suite with panoramic savanna views and stargazing telescope" width="800" height="480" loading="lazy">
-      </div>
-      <div class="lodge-panel__content">
-        <h3 class="lodge-panel__name">Crater Edge Suite</h3>
-        <div class="lodge-panel__location">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Ngorongoro Crater Rim, Tanzania
-        </div>
-        <p class="lodge-panel__desc">Perched on the very edge of the Ngorongoro Crater, these suites offer an unparalleled vantage point over one of Earth's most extraordinary natural arenas. Floor-to-ceiling glass frames the caldera's ancient drama.</p>
-        <div class="lodge-panel__features">
-          <div class="feature-item">
-            <div class="feature-item__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h6a2 2 0 0 1 2 2v6"/><path d="M2 18h8"/><path d="M14 6h6a2 2 0 0 1 2 2v6"/><path d="M14 12h8"/></svg>
+    <section class="section">
+      <div class="container">
+        <div class="bespoke">
+          <div class="reveal">
+            <p class="eyebrow">Plan Your Safari</p>
+            <h2>Yours, from the first conversation</h2>
+            <p class="lede" style="margin-top:1rem">No brochures, no standard offer. Tell us how you travel and where you dream of going — the working draft of your journey is drawn in under a week.</p>
+            <div class="hero__actions" style="margin-top:2rem">
+              <a class="btn btn--primary" href="/plan.html">Begin the Wizard</a>
             </div>
-            Crater-View Plunge Pool
           </div>
-          <div class="feature-item">
-            <div class="feature-item__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <div class="bespoke__steps reveal" data-delay="1">
+            <div class="bespoke__step">
+              <span class="bespoke__step-num" aria-hidden="true">1</span>
+              <div>
+                <h3>Tell us how you travel</h3>
+                <p>Ten gentle questions — people, pace, style, budget, the moments you cannot miss.</p>
+              </div>
             </div>
-            Observatory Telescope
-          </div>
-          <div class="feature-item">
-            <div class="feature-item__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <div class="bespoke__step">
+              <span class="bespoke__step-num" aria-hidden="true">2</span>
+              <div>
+                <h3>We compose the draft</h3>
+                <p>A first itinerary — camps, logistics, flights and seasons — sketched by one devoted planner.</p>
+              </div>
             </div>
-            Private Guide & Vehicle
-          </div>
-          <div class="feature-item">
-            <div class="feature-item__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3z"/><path d="M14 3h7v7h-7z"/><path d="M3 14h7v7H3z"/><path d="M14 14h7v7h-7z"/></svg>
+            <div class="bespoke__step">
+              <span class="bespoke__step-num" aria-hidden="true">3</span>
+              <div>
+                <h3>Refine until it fits</h3>
+                <p>Call, write, adjust. The final journey fits like something made for you — because it is.</p>
+              </div>
             </div>
-            Maasai Cultural Excursions
           </div>
         </div>
-        <a href="#" class="btn btn-outline-dark">
-          Reserve Your Suite
-          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============================================================
-       6. EDITORIAL FOOTER
-       ============================================================ -->
-  <footer class="footer" id="footer" role="contentinfo">
-    <div class="footer__inner">
-      <div class="footer__top">
-        <!-- Brand Column -->
+    <section class="section section--ivory-2">
+      <div class="container">
+        <div class="sectionHead sectionHead--center reveal">
+          <p class="eyebrow">From Our Guests</p>
+          <h2>In their own words</h2>
+        </div>
+        <div class="invitation reveal">
+          <h3>Guest impressions are on their way</h3>
+          <p>We are collecting verified words from real travellers before we publish them — never manufactured, never borrowed. In the meantime, our planners would be glad to connect you with past guests on request.</p>
+          <div class="hero__actions" style="justify-content:center">
+            <a class="btn btn--primary" href="/contact.html">Speak to a Planner</a>
+            <a class="btn btn--ghost" href="/journal.html">Read the Journal</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--forest">
+      <div class="container">
+        <div class="conservation">
+          <div class="reveal">
+            <p class="eyebrow eyebrow--on-dark">Conservation</p>
+            <h2>Tourism that keeps the wild wild</h2>
+            <p class="lede">East Africa&rsquo;s great reserves pay for themselves — private concessions, community dividends and low-density travel protect land at a scale no park budget could manage alone.</p>
+            <ul>
+              <li>Leased land and community income keep habitats intact</li>
+              <li>Every booking funds rangers, research and local projects</li>
+              <li>Fairly paid visits put value on shared heritage, not spectacle</li>
+            </ul>
+            <div class="hero__actions" style="margin-top:2rem">
+              <a class="btn btn--outline" href="/responsible-tourism.html">Our Approach</a>
+            </div>
+          </div>
+          <img src="/images/exp-migration.jpg" alt="Wildebeest crossing a river in a churned cascade of dust and water during the migration." class="reveal" data-delay="1" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="sectionHead sectionHead--center reveal">
+          <p class="eyebrow">Field Notes</p>
+          <h2>From the journal</h2>
+        </div>
+        <div class="grid grid--3">
+          <article class="journalCard reveal">
+            <a class="journalCard__media" href="/journal.html" aria-label="Read: The Great Migration, Explained">
+              <img src="/images/exp-migration.jpg" alt="The great wildebeest migration crossing open plains." loading="lazy">
+            </a>
+            <h3 class="journalCard__title"><a href="/journal.html">The Great Migration, Explained</a></h3>
+            <p class="journalCard__excerpt">What it is, where to see it, and why the herds move at all.</p>
+          </article>
+          <article class="journalCard reveal" data-delay="1">
+            <a class="journalCard__media" href="/journal.html" aria-label="Read: How Safari Land Keeps the Wild Wild">
+              <img src="/images/lodge-tented.jpg" alt="A tented camp at dusk, lantern light glowing in the open air." loading="lazy">
+            </a>
+            <h3 class="journalCard__title"><a href="/journal.html">How Safari Land Keeps the Wild Wild</a></h3>
+            <p class="journalCard__excerpt">The quiet work behind the ivory-tower view — concessions, communities and wildlife economies.</p>
+          </article>
+          <article class="journalCard reveal" data-delay="2">
+            <a class="journalCard__media" href="/journal.html" aria-label="Read: Planning a First Safari">
+              <img src="/images/hero-safari.jpg" alt="Golden light over the savanna at the close of day." loading="lazy">
+            </a>
+            <h3 class="journalCard__title"><a href="/journal.html">Planning a First Safari, Without the Overthinking</a></h3>
+            <p class="journalCard__excerpt">The trip of a lifetime — approached with calm.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-band">
+      <div class="cta-band__media"><img src="/images/lodge-villa.jpg" alt=""></div>
+      <div class="cta-band__scrim"></div>
+      <div class="container">
+        <p class="eyebrow eyebrow--on-dark">Begin the conversation</p>
+        <h2>Your journey is waiting to be composed.</h2>
+        <p class="lede">Share the shape of your dream safari, and within a week you will hold a working itinerary in your hands.</p>
+        <div class="cta-band__actions">
+          <a class="btn btn--primary" href="/plan.html">Plan Your Safari</a>
+          <a class="btn btn--outline" href="/contact.html">Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
         <div class="footer__brand">
-          <img src="katemo safaris.jpeg" alt="Katembo Safari Logo" width="72" height="72">
-          <p>Timeless, untethered luxury in the heart of the African wilderness. Since 2010, we've been crafting journeys that transcend the ordinary.</p>
-        </div>
-
-        <!-- Explore Links -->
-        <div>
-          <h4 class="footer__heading">Explore</h4>
-          <ul class="footer__links">
-            <li><a href="#experiences">Destinations</a></li>
-            <li><a href="#difference">Private Journeys</a></li>
-            <li><a href="#lodges">Luxury Lodges</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Our Story</a></li>
-          </ul>
-        </div>
-
-        <!-- Contact Column -->
-        <div>
-          <h4 class="footer__heading">Contact</h4>
-          <ul class="footer__links">
-            <li><a href="mailto:journeys@katembosafari.com">journeys@katembosafari.com</a></li>
+          <a class="brand" href="/" aria-label="Katembo Safari — home">
+            <img class="brand__logo" src="/katemo safaris.jpeg" alt="">
+            <span class="brand__name">Katembo Safari</span>
+          </a>
+          <p class="footer__about">Bespoke private safaris for discerning travellers — from the plains of the Serengeti to the sands of Zanzibar.</p>
+          <ul class="footer__contact">
             <li><a href="tel:+255700000000">+255 700 000 000</a></li>
-            <li><a href="#">Arusha, Tanzania</a></li>
-            <li><a href="#">Nairobi, Kenya</a></li>
+            <li><a href="mailto:journeys@katembosafari.com">journeys@katembosafari.com</a></li>
+            <li>Arusha, Tanzania · Nairobi, Kenya</li>
           </ul>
         </div>
-
-        <!-- Newsletter Column -->
         <div>
-          <h4 class="footer__heading">Field Notes</h4>
-          <p class="footer__newsletter-text">Receive seasonal dispatches from the bush — wildlife sightings, conservation updates, and curated travel inspiration.</p>
-          <form class="footer__newsletter-form" aria-label="Newsletter subscription">
-            <input type="email" id="newsletter-email" placeholder="Your email address" aria-label="Email address for newsletter" required>
-            <button type="submit">Subscribe</button>
+          <h2 class="footer__head">Destinations</h2>
+          <ul class="footer__list">
+            <li><a href="/destinations/serengeti">Serengeti</a></li>
+            <li><a href="/destinations/ngorongoro">Ngorongoro</a></li>
+            <li><a href="/destinations/tarangire">Tarangire</a></li>
+            <li><a href="/destinations/ruaha">Ruaha</a></li>
+            <li><a href="/destinations/zanzibar">Zanzibar</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer__head">Experiences</h2>
+          <ul class="footer__list">
+            <li><a href="/experiences/great-migration">Great Migration</a></li>
+            <li><a href="/experiences/hot-air-balloon-safari">Balloon Safari</a></li>
+            <li><a href="/experiences/walking-safari">Walking Safari</a></li>
+            <li><a href="/experiences/helicopter-safari">Helicopter Safari</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer__head">Field Notes</h2>
+          <p>Seasonal notes from the bush — once a month, no noise. Join us.</p>
+          <form class="footer__form" action="#">
+            <label class="sr-only" for="newsletterEmail">Email address</label>
+            <input type="email" id="newsletterEmail" name="email" placeholder="Your email address" autocomplete="email" required>
+            <button type="submit">Join</button>
+            <p class="form-note" id="newsletterNote" role="status" hidden></p>
           </form>
         </div>
       </div>
-
       <div class="footer__bottom">
-        <p class="footer__copyright">&copy; 2025 Katembo Safari. All rights reserved. Crafted with reverence for the wild.</p>
-        <div class="footer__socials" aria-label="Social media links">
-          <!-- Instagram -->
-          <a href="#" aria-label="Follow us on Instagram">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-          <!-- Facebook -->
-          <a href="#" aria-label="Follow us on Facebook">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          </a>
-          <!-- YouTube -->
-          <a href="#" aria-label="Watch us on YouTube">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.13C5.12 19.56 12 19.56 12 19.56s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
-          </a>
-          <!-- X/Twitter -->
-          <a href="#" aria-label="Follow us on X">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
-          </a>
-        </div>
+        <p>&copy; <span id="year"></span> Katembo Safari Ltd. All rights reserved.</p>
+        <div class="footer__socials" id="footerSocials"></div>
+        <nav class="footer__legal" aria-label="Legal">
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+          <a href="/responsible-tourism.html">Responsible Tourism</a>
+        </nav>
       </div>
     </div>
   </footer>
-
-  <!-- ============================================================
-       SCRIPTS — GSAP + ScrollTrigger + Custom Animations
-       ============================================================ -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-  <script src="script.js" defer></script>
-
+  <script src="/data.js"></script>
+  <script src="/script.js"></script>
 </body>
 </html>

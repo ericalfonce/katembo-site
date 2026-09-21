@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plan Your Safari — Katembo Safari</title>
+  <meta name="description" content="Tell Katembo Safari how you like to travel — a ten-part guided wizard that prepares a tailored safari enquiry in minutes.">
+  <link rel="canonical" href="https://katembo-site.vercel.app/plan.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Katembo Safari">
+  <meta property="og:title" content="Plan Your Safari — Katembo Safari">
+  <meta property="og:description" content="A ten-part guided wizard that prepares a tailored safari enquiry.">
+  <meta property="og:image" content="https://katembo-site.vercel.app/images/hero-safari.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#241a12">
+  <link rel="icon" href="/katemo safaris.jpeg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Plus+Jakarta+Sans:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="siteHeader">
+    <div class="container header__inner">
+      <a class="brand" href="/" aria-label="Katembo Safari — home">
+        <img class="brand__logo" src="/katemo safaris.jpeg" alt="">
+        <span class="brand__name">Katembo Safari</span>
+      </a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primaryNav" class="nav" aria-label="Primary">
+        <a class="nav__link" href="/">Home</a>
+        <a class="nav__link" href="/journeys/">Journeys</a>
+        <a class="nav__link" href="/destinations/">Destinations</a>
+        <a class="nav__link" href="/experiences/">Experiences</a>
+        <a class="nav__link" href="/stays/">Places to Stay</a>
+        <a class="nav__link" href="/about.html">About</a>
+        <a class="nav__link" href="/journal.html">Journal</a>
+        <a class="nav__cta btn btn--primary" href="/plan.html">Plan Your Safari</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="/">Home</a><span class="breadcrumb__sep" aria-hidden="true">/</span><span aria-current="page">Plan Your Safari</span></p>
+        <p class="eyebrow eyebrow--on-dark">Plan Your Safari</p>
+        <h1 class="page-hero__title">The Shape of Your Journey</h1>
+        <p class="page-hero__lede">Ten quick questions, no obligation. What you tell us here is read by a person — a dedicated planner who will reply with a working itinerary within two working days.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="wizard">
+          <form id="enquiryForm" novalidate>
+            <div class="wizard__progress">
+              <div class="wizard__bar"><div class="wizard__bar-fill" data-wizard-fill style="width:0"></div></div>
+              <div class="wizard__meta">
+                <span class="wizard__step-label" data-wizard-step></span>
+                <span data-wizard-live></span>
+              </div>
+            </div>
+            <div data-wizard-panels></div>
+            <div class="wizard__nav">
+              <button type="button" class="btn btn--outline-dark" data-wizard-back hidden>Back</button>
+              <button type="button" class="btn btn--primary" data-wizard-next>Continue</button>
+              <button type="submit" class="btn btn--primary" data-wizard-submit hidden>Send Enquiry</button>
+            </div>
+          </form>
+
+          <div data-wizard-done hidden>
+            <div class="invitation">
+              <h3>Your enquiry is on its way</h3>
+              <p>Your email app has just opened with the shape of your journey written out. Press send there to place it with the planners — and if no email app is available, copy the summary below and send it to <a href="mailto:journeys@katembosafari.com">journeys@katembosafari.com</a>.</p>
+              <div class="hero__actions" style="justify-content:center">
+                <button type="button" class="btn btn--outline-dark" data-wizard-copy>Copy summary</button>
+                <a class="btn btn--ghost" href="/">Return Home</a>
+              </div>
+            </div>
+          </div>
+
+          <p class="form-note form-note--info" style="margin-top:var(--space-lg)">This form prepares your enquiry and opens your email app — no data is stored on this site. When you are ready to accept enquiries without the email step, connect the same payload to a form backend (for example Formspree or Resend); the handover is documented in implementation_plan.md.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="brand" href="/" aria-label="Katembo Safari — home">
+            <img class="brand__logo" src="/katemo safaris.jpeg" alt="">
+            <span class="brand__name">Katembo Safari</span>
+          </a>
+          <p class="footer__about">Bespoke private safaris for discerning travellers — from the plains of the Serengeti to the sands of Zanzibar.</p>
+          <ul class="footer__contact">
+            <li><a href="tel:+255700000000">+255 700 000 000</a></li>
+            <li><a href="mailto:journeys@katembosafari.com">journeys@katembosafari.com</a></li>
+            <li>Arusha, Tanzania · Nairobi, Kenya</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer__head">Destinations</h2>
+          <ul class="footer__list">
+            <li><a href="/destinations/serengeti">Serengeti</a></li>
+            <li><a href="/destinations/ngorongoro">Ngorongoro</a></li>
+            <li><a href="/destinations/tarangire">Tarangire</a></li>
+            <li><a href="/destinations/ruaha">Ruaha</a></li>
+            <li><a href="/destinations/zanzibar">Zanzibar</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer__head">Experiences</h2>
+          <ul class="footer__list">
+            <li><a href="/experiences/great-migration">Great Migration</a></li>
+            <li><a href="/experiences/hot-air-balloon-safari">Balloon Safari</a></li>
+            <li><a href="/experiences/walking-safari">Walking Safari</a></li>
+            <li><a href="/experiences/helicopter-safari">Helicopter Safari</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer__head">Field Notes</h2>
+          <p>Seasonal notes from the bush — once a month, no noise. Join us.</p>
+          <form class="footer__form" action="#">
+            <label class="sr-only" for="newsletterEmail">Email address</label>
+            <input type="email" id="newsletterEmail" name="email" placeholder="Your email address" autocomplete="email" required>
+            <button type="submit">Join</button>
+            <p class="form-note" id="newsletterNote" role="status" hidden></p>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="year"></span> Katembo Safari Ltd. All rights reserved.</p>
+        <div class="footer__socials" id="footerSocials"></div>
+        <nav class="footer__legal" aria-label="Legal">
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+          <a href="/responsible-tourism.html">Responsible Tourism</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="/data.js"></script>
+  <script src="/script.js"></script>
+</body>
+</html>
