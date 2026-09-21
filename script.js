@@ -160,6 +160,9 @@
         toggle.setAttribute('aria-expanded', 'false');
         toggle.setAttribute('aria-label', 'Open menu');
         document.body.style.overflow = '';
+        if (toggle.contains(doc.activeElement) === false && nav.contains(doc.activeElement)) {
+          toggle.focus();
+        }
       };
 
       toggle.addEventListener('click', function () {
