@@ -88,6 +88,7 @@ body {
 }
 
 img { max-width: 100%; height: auto; display: block; }
+html, body { overflow-x: clip; }
 
 a {
   color: inherit;
@@ -495,6 +496,12 @@ h4 { font-size: 1.18rem; font-weight: 400; }
 .grid--3 { grid-template-columns: repeat(3, 1fr); }
 .grid--4 { grid-template-columns: repeat(4, 1fr); }
 
+/* Responsive modifiers (inline styles must not override media queries) */
+.pillars--two { grid-template-columns: repeat(2, 1fr); }
+.intro--auto { grid-template-columns: 1fr auto; align-items: start; }
+.contact-aside { min-width: 0; }
+@media (min-width: 901px) { .contact-aside { min-width: 19rem; } }
+
 /* ─── Editorial intro (split) ─── */
 .intro {
   display: grid;
@@ -897,6 +904,8 @@ h4 { font-size: 1.18rem; font-weight: 400; }
 
 @media (max-width: 900px) {
   .intro, .bespoke, .conservation, .layout-detail { grid-template-columns: 1fr; }
+  .intro--auto { grid-template-columns: 1fr; }
+  .contact-aside { min-width: 0; }
   .layout-detail__aside { position: static; }
   .grid--3 { grid-template-columns: repeat(2, 1fr); }
   .footer__grid { grid-template-columns: 1fr 1fr; }
