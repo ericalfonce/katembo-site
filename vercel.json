@@ -2,11 +2,10 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/ping-test", "destination": "/about.html" },
-    { "source": "/journeys/:slug", "destination": "/journeys/detail.html?slug=:slug" },
-    { "source": "/destinations/:slug", "destination": "/destinations/detail.html?slug=:slug" },
-    { "source": "/experiences/:slug", "destination": "/experiences/detail.html?slug=:slug" },
-    { "source": "/stays/:slug", "destination": "/stays/detail.html?slug=:slug" }
+    { "source": "/journeys/:slug", "destination": "/journeys/detail?slug=:slug" },
+    { "source": "/destinations/:slug", "destination": "/destinations/detail?slug=:slug" },
+    { "source": "/experiences/:slug", "destination": "/experiences/detail?slug=:slug" },
+    { "source": "/stays/:slug", "destination": "/stays/detail?slug=:slug" }
   ],
   "headers": [
     {
