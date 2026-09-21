@@ -615,7 +615,7 @@ window.KATEMBO = (function () {
   ];
 
   /* -------------------------------------------------------------------
-     TESTIMONIALS — heart set subscribered for genuine, verified reviews.
+     TESTIMONIALS — held back for genuine, verified reviews.
      Only entries with verified: true are displayed on the site.
      ------------------------------------------------------------------- */
   var testimonials = [

@@ -442,7 +442,9 @@
     if (!container || !KATEMBO) return;
     var R = RENDERERS[collection];
     if (!R) return;
-    var items = KATEMBO[collection].slice();
+    var items = KATEMBO[collection].slice().filter(function (item) {
+      return item.verified !== false;
+    });
     var limit = parseInt(container.getAttribute('data-limit') || '0', 10);
     if (limit > 0) items = items.slice(0, limit);
     renderCardsInto(container, items, {
@@ -452,6 +454,12 @@
       categoryFn: R.categoryFn,
       ariaLabel: ''
     });
+    if (!items.length) {
+      var empty = qs('[data-listing-empty]');
+      if (empty) empty.hidden = false;
+      var filters = qs('[data-listing-filters]');
+      if (filters) filters.hidden = true;
+    }
   }
 
   /* ============================================================
@@ -463,7 +471,7 @@
     if (p) return p;
     var seg = window.location.pathname.split('/').filter(Boolean).pop();
     if (!seg || seg === 'detail.html' || seg === 'index.html' || seg === 'index') return null;
-    return decodeURIComponent(seg);
+    try { return decodeURIComponent(seg); } catch (e) { return seg; }
   }
 
   function ctaButton(label, href) {
@@ -627,7 +635,7 @@
         h += ctaButton('Enquire About This Stay', '/plan.html?destination=' + encodeURIComponent(item.title));
         return h;
       },
-      related: function (item) { return KATEMBO.stays.filter(function (s) { return s.slug !== item.slug; }); },
+      related: function (item) { return KATEMBO.stays.filter(function (s) { return s.slug !== item.slug && s.verified !== false; }); },
       relatedHead: 'Other Stays',
       relatedCta: 'View Stay'
     }
@@ -640,6 +648,7 @@
     var D = DETAIL[collection];
     var slug = resolveSlug();
     var item = slug ? KATEMBO.bySlug(KATEMBO[collection], slug) : undefined;
+    if (item && item.verified === false) item = undefined;
 
     var notFound = qs('[data-detail-notfound]');
     var root = qs('[data-detail-root]');
@@ -986,7 +995,7 @@
       '<h2 class="step-panel__title">Your Safari, in Short</h2>' +
       '<p class="step-panel__hint">A summary of your request. Review it, then send — your email app will open with everything prepared.</p>' +
       '<dl class="wizard__review">' + rows.join('') + '</dl>' +
-      '<p class="form-note form-note--info">This form prepares the enquiry and opens your email app. To accept enquiries without an email step, connect a form backend (for example Formspree, Resend or a serverless function) to the same payload — see implementation_plan.md.</p>';
+      '<p class="form-note form-note--info">This form prepares the enquiry and opens your email app. To accept enquiries without an email step, connect a form backend (for example Formspree, Resend or a serverless function) to the same payload.</p>';
   }
 
   function composeAndSend() {
