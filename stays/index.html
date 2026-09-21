@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Places to Stay — Katembo Safari</title>
   <meta name="description" content="Luxury tented camps, private villas and wilderness suites chosen for their position — and the people who run them.">
-  <link rel="canonical" href="https://katembo-site.vercel.app/stays/">
+  <link rel="canonical" href="https://katembo-site.vercel.app/stays">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Katembo Safari">
   <meta property="og:title" content="Places to Stay — Katembo Safari">
@@ -66,13 +66,14 @@
           <h2>Selected stays</h2>
           <p class="lede">We work with a selected list of camps and lodges. Details below are for orientation — availability and features are confirmed at the time of booking.</p>
         </div>
-        <div class="filters" role="group" aria-label="Filter stays by type">
+        <div class="filters" role="group" aria-label="Filter stays by type" data-listing-filters>
           <button class="filter-pill is-active" type="button" data-filter="all" aria-pressed="true">All</button>
           <button class="filter-pill" type="button" data-filter="Luxury Tented Camp" aria-pressed="false">Camps</button>
           <button class="filter-pill" type="button" data-filter="Private Safari Villa" aria-pressed="false">Villas</button>
           <button class="filter-pill" type="button" data-filter="Wilderness Suite" aria-pressed="false">Suites</button>
         </div>
         <div data-listing="stays" data-filterable></div>
+        <p class="form-note form-note--info" data-listing-empty hidden>Our selected camps and lodges are being finalised before they are published here. Tell us how you like to travel and we will recommend stays that suit your itinerary.</p>
       </div>
     </section>
     <section class="section cta-band">

@@ -1,0 +1,5 @@
+*.md
+.env*
+.git
+.gitignore
+.vercelignore

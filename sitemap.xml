@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://katembo-site.vercel.app/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://katembo-site.vercel.app/plan.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://katembo-site.vercel.app/about.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://katembo-site.vercel.app/journal.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://katembo-site.vercel.app/contact.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://katembo-site.vercel.app/privacy.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
-  <url><loc>https://katembo-site.vercel.app/terms.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
-  <url><loc>https://katembo-site.vercel.app/responsible-tourism.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://katembo-site.vercel.app/journeys/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://katembo-site.vercel.app/plan</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://katembo-site.vercel.app/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://katembo-site.vercel.app/journal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://katembo-site.vercel.app/contact</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://katembo-site.vercel.app/privacy</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://katembo-site.vercel.app/terms</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://katembo-site.vercel.app/responsible-tourism</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://katembo-site.vercel.app/journeys</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://katembo-site.vercel.app/journeys/great-migration</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://katembo-site.vercel.app/journeys/serengeti-ngorongoro</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://katembo-site.vercel.app/journeys/tanzania-highlights</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -17,7 +17,7 @@
   <url><loc>https://katembo-site.vercel.app/journeys/family-safari</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://katembo-site.vercel.app/journeys/safari-and-zanzibar</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://katembo-site.vercel.app/journeys/tanzania-kenya</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://katembo-site.vercel.app/destinations/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://katembo-site.vercel.app/destinations</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://katembo-site.vercel.app/destinations/serengeti</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://katembo-site.vercel.app/destinations/ngorongoro</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://katembo-site.vercel.app/destinations/tarangire</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -28,7 +28,7 @@
   <url><loc>https://katembo-site.vercel.app/destinations/tanzania</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://katembo-site.vercel.app/destinations/kenya</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://katembo-site.vercel.app/destinations/rwanda</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://katembo-site.vercel.app/experiences/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://katembo-site.vercel.app/experiences</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://katembo-site.vercel.app/experiences/great-migration</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://katembo-site.vercel.app/experiences/hot-air-balloon-safari</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://katembo-site.vercel.app/experiences/walking-safari</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -39,8 +39,5 @@
   <url><loc>https://katembo-site.vercel.app/experiences/conservation-experience</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://katembo-site.vercel.app/experiences/honeymoon-safari</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://katembo-site.vercel.app/experiences/family-safari</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://katembo-site.vercel.app/stays/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://katembo-site.vercel.app/stays/serengeti-under-canvas</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://katembo-site.vercel.app/stays/mara-heights-villa</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://katembo-site.vercel.app/stays/crater-edge-suite</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://katembo-site.vercel.app/stays</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
