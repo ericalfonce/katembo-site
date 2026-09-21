@@ -24,7 +24,7 @@ window.KATEMBO = (function () {
   var siteConfig = {
     name: 'Katembo Safari',
     legalName: 'Katembo Safari Ltd.',
-    tagline: 'Timeless, untethered luxury.',
+    tagline: 'Timeless journeys through the wild.',
     logo: 'katemo safaris.jpeg',
     // Live deployment domain. Change to the owned domain before production.
     baseUrl: 'https://katembo-site.vercel.app',

@@ -9,7 +9,7 @@ Production-ready, multi-page bespoke safari site. **Static vanilla HTML/CSS/JS**
 ## 1. Vision & Positioning
 
 - **Who**: discerning private travellers planning a first or fifth East African safari.
-- **Promise**: "Timeless, untethered luxury." Tailored journeys, private guides, conservation that pays.
+- **Promise**: "Timeless journeys through the wild." Private, tailor-made safaris across Tanzania and East Africa — planned around each traveller.
 - **Tone**: editorial, restrained, confident. No stock-salesmanship, no stats we cannot prove.
 
 ## 2. Architecture
