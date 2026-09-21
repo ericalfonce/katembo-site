@@ -103,23 +103,50 @@
     );
   }
 
+  /* Editorial listing: chunk items into asymmetric rows of
+     [ one large lead card ][ a narrower rail of smaller cards ].
+     No CSS grid — a flex layout that alternates and staggers. */
   function renderCardsInto(container, items, opts) {
     var o = opts || {};
-    var grid = doc.createElement('div');
-    grid.className = 'grid ' + (o.columns || 'grid--3');
-    items.forEach(function (item) {
+    var editorial = doc.createElement('div');
+    editorial.className = 'editorial';
+
+    function makeCard(item) {
       var itemOpts = {};
       var key;
       for (key in o) itemOpts[key] = o[key];
       if (o.metaFn) itemOpts.meta = o.metaFn(item);
-      grid.insertAdjacentHTML('beforeend', cardHTML(item, itemOpts));
+      var holder = doc.createElement('div');
+      holder.innerHTML = cardHTML(item, itemOpts);
+      var card = holder.firstElementChild;
       if (o.categoryFn) {
-        var last = grid.lastElementChild;
         var cat = o.categoryFn(item);
-        if (cat) last.setAttribute('data-category', cat);
+        if (cat) card.setAttribute('data-category', cat);
       }
-    });
-    container.appendChild(grid);
+      return card;
+    }
+
+    var i;
+    for (i = 0; i < items.length; i += 3) {
+      var rowItems = items.slice(i, i + 3);
+      var row = doc.createElement('div');
+      row.className = 'editorial__row' + ((i / 3) % 2 === 1 ? ' editorial__row--flip' : '');
+
+      var lead = makeCard(rowItems[0]);
+      lead.classList.add('editorial__lead');
+      row.appendChild(lead);
+
+      if (rowItems.length > 1) {
+        var rail = doc.createElement('div');
+        rail.className = 'editorial__rail';
+        rowItems.slice(1).forEach(function (item) {
+          rail.appendChild(makeCard(item));
+        });
+        row.appendChild(rail);
+      }
+      editorial.appendChild(row);
+    }
+    container.appendChild(editorial);
   }
 
   /* ============================================================
@@ -160,6 +187,9 @@
         toggle.setAttribute('aria-expanded', 'false');
         toggle.setAttribute('aria-label', 'Open menu');
         document.body.style.overflow = '';
+        if (toggle.contains(doc.activeElement) === false && nav.contains(doc.activeElement)) {
+          toggle.focus();
+        }
       };
 
       toggle.addEventListener('click', function () {
@@ -361,6 +391,15 @@
           var show = filter === 'all' || item.getAttribute('data-category') === filter;
           item.hidden = !show;
         });
+        qsa('.editorial__lead, .editorial__rail', grid).forEach(function (wrap) {
+          var cards = qsa('.card', wrap);
+          var anyVisible = cards.some(function (c) { return !c.hidden; });
+          wrap.hidden = !anyVisible;
+        });
+        qsa('.editorial__row', grid).forEach(function (row) {
+          var visible = qsa('.editorial__lead:not([hidden]), .editorial__rail:not([hidden])', row);
+          row.hidden = visible.length === 0;
+        });
       });
     });
   }
@@ -408,8 +447,6 @@
     if (limit > 0) items = items.slice(0, limit);
     renderCardsInto(container, items, {
       base: R.base,
-      columns: container.getAttribute('data-columns') || 'grid--3',
-      tall: container.getAttribute('data-tall') === 'true',
       cta: R.cta,
       metaFn: R.metaFn,
       categoryFn: R.categoryFn,
@@ -672,7 +709,6 @@
       var wrap = doc.createElement('div');
       renderCardsInto(wrap, D.related(item).slice(0, 3), {
         base: RENDERERS[collection].base,
-        columns: 'grid--3',
         cta: D.relatedCta,
         metaFn: RENDERERS[collection].metaFn
       });
